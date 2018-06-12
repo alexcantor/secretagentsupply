@@ -83,6 +83,10 @@ main .container {
   justify-content: space-between;
 }
 
+.menu-1024px {
+  display: none;
+}
+
 /*Image Gallery Styles*/
 
 .img.container {
@@ -153,4 +157,41 @@ footer {
   background-color: black;
   margin: 0 auto;
   align-items: center;
+}
+
+/*Media Queries*/
+
+/* Tablet Styles*/
+@media only screen and (max-width: 1024px) {
+  .menu-1024px {
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  div.box1,
+  div.box2 {
+    width: 47%;
+  }
+
+  .img-box img {
+    height: 9rem;
+    width: 9rem;
+    margin: 2rem auto;
+  }
+
+  div.box3 {
+    display: none;
+  }
+
+  .new-arrival h3 {
+    font-size: 0.75rem;
+  }
+
+  .new-arrival h1 {
+    font-size: 1.5rem;
+  }
 }
