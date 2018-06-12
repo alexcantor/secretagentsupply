@@ -25,6 +25,7 @@ header {
   height: 2.72rem;
   width: 960px;
   margin: 0 auto;
+  border: 2px solid white;
 
 }
 
@@ -47,23 +48,26 @@ main {
 main .container {
   width: 960px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
-.new-arrival {
+.new-arrival-container {
   flex-direction: column;
   position: relative;
   top: 9rem;
   width: 25rem;
   height: 10rem;
   background-color: black;
+  margin: 0;
 }
-.new-arrival h3 {
+
+.new-arrival-container h3 {
   margin-top: 2rem;
   margin-left: 3rem;
   margin-bottom: 0.25rem;
   font-weight: bold;
 }
-.new-arrival h1 {
+.new-arrival-container h1 {
   margin-left: 3rem;
   font-size: 2rem;
   font-weight: bold;
@@ -81,6 +85,7 @@ main .container {
   width: 960px;
   margin: 0 auto;
   justify-content: space-between;
+  border: 2px solid white;
 }
 
 .menu-1024px {
@@ -101,8 +106,8 @@ main .container {
   margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
+
 .img-box {
   border: 4px solid black;
   height: 15rem;
@@ -131,7 +136,6 @@ main .container {
 }
 
 .lower-box .hours, .location {
-  width: 100%;
   height: 3rem;
   background-color: black;
   align-items: center;
@@ -187,11 +191,93 @@ footer {
     display: none;
   }
 
-  .new-arrival h3 {
+  .new-arrival-container h3 {
     font-size: 0.75rem;
   }
 
-  .new-arrival h1 {
+  .new-arrival-container h1 {
     font-size: 1.5rem;
+  }
+}
+
+/*Smart phone Styles*/
+@media only screen and (max-width: 470px) {
+  /*Heder styles*/
+  header {
+    width: 100%;
+    border: 2px solid white;
+    justify-content: center;
+  }
+
+  header span {
+    display: none;
+  }
+
+  /*Main Styles*/
+  main {
+    height: 15rem;
+  }
+
+  main .container {
+      width: 100%;
+  }
+
+  .new-arrival-container {
+    top: 10rem;
+    width: 100%;
+    height: 4.7rem;
+    background-color: black;
+    border: 2px solid white;
+  }
+
+  .new-arrival-container h3 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0.21rem;
+    font-size: 0.77rem;
+  }
+
+  .new-arrival-container h1 {
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+
+  /*Image Gallery Styles*/
+  .img.container {
+    height: 34.5rem;
+    background-color: white;
+    border: 2px solid red;
+  }
+
+  .img.gallery {
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid blue;
+  }
+
+  div.box1 {
+    width: 90%;
+  }
+
+  div.box2, div.box3 {
+    display: none;
+  }
+
+  .lower-box {
+    width: 90%;
+    height: 5rem;
+    flex-direction: column;
+    margin: 0.25rem 0;
+  }
+
+  /*Footer Styles*/
+  footer {
+    width: 100%;
+    justify-content: center;
+    border: 2px solid white;
+  }
+
+  .img.sub-container {
+    width: 100%;
   }
 }
