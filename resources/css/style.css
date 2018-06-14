@@ -39,6 +39,7 @@ header {
 
 /*Main section Styles*/
 main {
+  display: block; /*Necessary to work with IE*/
   width: 100%;
   height: 25rem;
   background-image: url("../pics/moto.jpeg");
@@ -168,7 +169,7 @@ footer {
   .site-container {
     width: 100%;
   }
-  
+
   .menu-1024px {
     display: block;
     margin: 0 auto;
